@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIDOJUEGOS</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+    <link rel="icon" href="img/dido-circular.png" />
+    
+    <style>
+        *{
+            font-family: "Germania One";
+        }
+        body{
+            background-image: url(img/dido.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #sound{
+            margin: 5% 0 0 30%;
+            width: 30px;
+            height : 30px;
+            cursor: pointer;
+            position: absolute;
+            top : 465px;
+            left : 15px;
+        }
+        #gameover{
+            margin: 5% 0 0 30%;
+            position: absolute;
+            width : 400px;
+            height: 500px;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        #youwon{
+            margin: 5% 0 0 30%;
+            width: 100px;
+            position: absolute;
+            top : 200px;
+            left : 150px;
+            display: none;
+        }
+        #youlose{
+            margin: 5% 0 0 30%;
+            width:400px;
+            position: absolute;
+            top: 100px;
+            left : 0px;
+            display: none;
+        }
+        #restart{
+            margin: 5% 0 0 30%;
+            position: absolute;
+            top: 310px;
+            left : 155px;
+            cursor: pointer;
+            font-size: 1.25em;
+            color : #FFF;
+        }
+        #breakout{
+            justify-content: center;
+            align-items: center;
+            margin: 5% 0 0 30%;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="sound">
+        <img src="img/SOUND_ON.png" alt="" id="sound">
+    </div>
+    
+    <div id="gameover">
+        <img src="img/youwon.png" alt="" id="youwon">
+        <img src="img/gameover.png" alt="" id="youlose">
+        <div id="restart">Play Again!</div>
+    </div>
+   
+    <canvas id="breakout" width="400" height="500"></canvas>
+    
+    <script src="COMPONENTS.JS"></script>
+    <script src="GAME.JS"></script>
+</body>
+</html>
